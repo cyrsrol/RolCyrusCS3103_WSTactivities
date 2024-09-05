@@ -1,12 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Schedule</title>
     <style>
+        body {
+            background-color: #e0f7fa; /* Light blue background for the entire page */
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* Fallback font */
+        }
         table {
             width: 100%;
             border-collapse: collapse;
+            background-color: #e0f7fa; /* Light blue background for the table */
+            margin: 20px 0; /* Add some margin to the table */
         }
         th, td {
             border: 1px solid #000;
@@ -15,7 +24,11 @@
             height: 50px; /* Set a fixed height for all rows */
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #003366; /* Navy blue background for headers */
+            color: #ffffff; /* White text color for headers */
+        }
+        td.scheduled {
+            background-color: #ffffff; /* White background for cells with schedules */
         }
         h2, h3 {
             text-align: center;
@@ -39,18 +52,18 @@
     </tr>
     <tr>
         <td>07:00 AM - 07:30 AM</td>
-        <td rowspan="6">
+        <td class="scheduled" rowspan="6">
             IT 331<br>
             Application Development and Emerging Technologies<br>
             LAB 4
         </td>
-        <td rowspan="3">
+        <td class="scheduled" rowspan="3">
             IT 321<br>
             Human-Computer Interaction<br>
             102
         </td>
         <td></td>
-        <td rowspan="4">
+        <td class="scheduled" rowspan="4">
             GEd 104<br>
             The Contemporary World<br>
             103
@@ -66,9 +79,10 @@
         <td>08:00 AM - 08:30 AM</td>
         <td></td>
         <td></td>
+    </tr>
     <tr>
         <td>08:30 AM - 09:00 AM</td>
-        <td rowspan="3">
+        <td class="scheduled" rowspan="3">
             CS 311<br>
             Automata Theory and Formal Languages<br>
             402
@@ -91,7 +105,7 @@
     <tr>
         <td>10:00 AM - 10:30 AM</td>
         <td></td>
-        <td rowspan="6">
+        <td class="scheduled" rowspan="6">
             IT 314<br>
             Web Systems and Technologies<br>
             LAB 3
@@ -111,7 +125,7 @@
         <td>11:00 AM - 11:30 AM</td>
         <td></td>
         <td></td>
-        <td rowspan="4">
+        <td class="scheduled" rowspan="4">
             IT 314<br>
             Web Systems and Technologies<br>
             LAB 3
@@ -138,19 +152,19 @@
     </tr>
     <tr>
         <td>01:00 PM - 01:30 PM</td>
-        <td rowspan="3">
+        <td class="scheduled" rowspan="3">
             MATH 408<br>
             Data Analysis<br>
             103
         </td>
         <td></td>
         <td></td>
-        <td rowspan="3">
+        <td class="scheduled" rowspan="3">
             MATH 408<br>
             Data Analysis<br>
             103
         </td>
-        <td rowspan="10">
+        <td class="scheduled" rowspan="10">
             CS 312<br>
             Mobile Computing<br>
             LAB 3
@@ -168,14 +182,14 @@
     </tr>
     <tr>
         <td>02:30 PM - 03:00 PM</td>
-        <td rowspan="3">
+        <td class="scheduled" rowspan="3">
             IT 321<br>
             Human-Computer Interaction<br>
             103
         </td>
         <td></td>
         <td></td>
-        <td rowspan="3">
+        <td class="scheduled" rowspan="3">
             CS 311<br>
             Automata Theory and Formal Languages<br>
             402
@@ -239,4 +253,3 @@
 
 </body>
 </html>
-
