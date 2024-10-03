@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pangolin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('watchtower.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.523);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 80%; 
+    max-width: 900px; 
+}
+
+.board-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.board-title h1 {
+    font-size: 2.2em;
+}
+
+.board-title p {
+    font-size: 1.1em;
+}
+
+.vision-board {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%; 
+    gap: 20px; 
+}
+
+.side-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left, .right {
+    margin: 0 20px; 
+}
+
+.center-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 15px;
+    width: 180px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h2 {
+    margin: 8px 0;
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.left .card, .right .card {
+    width: 180px;
+    height: 340px; 
+}
